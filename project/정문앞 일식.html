@@ -91,7 +91,7 @@
               <p class="card-text">네코정</p>
               <div class="d-flex justify-content-between align-items-center">
                           
-       <button class="btn btn-sm btn-outline-secondary" onclick="explain(1)>viewX</button>
+       <button class="btn btn-sm btn-outline-secondary" onclick="explain(1)>view</button>
 		      
                   </div>
                 </div>
@@ -110,7 +110,7 @@
               <p class="card-text">기린라멘</p>
               <div class="d-flex justify-content-between align-items-center">
                 
-                    <button class="btn btn-sm btn-outline-secondary" onclick="explain(2)>viewX</button>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="explain(2)>view</button>
                               
                   </div>
                 </div>
@@ -129,7 +129,7 @@
               <p class="card-text">반갑다연어야</p>
               <div class="d-flex justify-content-between align-items-center">
                 
-                    <button class="btn btn-sm btn-outline-secondary" onclick="explain(3)>viewX</button>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="explain(3)>view</button>
 
                   </div>
                 </div>
@@ -170,93 +170,7 @@
 
 
 
-  <script type="text/javascript">
-const modal = document.querySelector(".modal");
-const closeBtn = document.querySelector(".close");
-const btn_description = {
-  1 : {"title" : "네코정", "description":"<p>◉가격</p>
-                      <p>월,수,금 메뉴
-			스테이크동 : 9,000
-			w스테이크동 : 13,000
-			부타동 : 7,900
-			가라아게동 : 8,000
-			사케동 : 9,500
-			  오야꼬동 8,500 </br>
-	      	     화,목,토
-			스테이크동 : 9,000
-			w스테이크동 : 13,000
-			사케동 : 9,500
-			오야꼬동 8,500
-			가츠동 : 7,900
-			애비가츠동 8,500
-			믹스가츠동 9,000</br>
-		</P>
-                      <p>◉영업시간</P>
-             		<p>매일 11:00 - 21:00
-		      라스트 오더 20:30 (일요일 휴무)
-                      </P>
-                      <p>◉장소 </P>
-                      <p>노원구 동일로 192길 77 2층
-                      지번 : 노원구 공릉동 745 2층</P>
-                      ◉전화번호</P>
-                      070-4110-5224"},
-  2 : {"title" : "기린라멘", "description":"          ◉가격</p>
-                      돈코츠라멘 : 5,900
-	     	      카라구치라멘 : 6,500
-		      우삼겹라멘 : 6,500
-		      소유라멘 : 5,900
-		      미소라멘 : 6,500
-		      우육탕면 : 6,500</br>
-		      쿠로마유라멘 : 6,500
-		      카레돈카츠동 : 6,900
-		      카레가라아게동 6,900
-		      야끼도리동 : 6,900
-		      차슈동 : 6,900
-		      사케동 : 8,500</P>
-                      ◉영업시간</P>
-                      월-토 11:00 - 20:30 break time 15:00-17:00
-		      주말,공휴일 11:30 - 21:00 break time 15:00-17:00
-			라스트 오더 매일 20:30
-                      </P>
-                      ◉장소 </P>
-                      노원구 동일로 209
-                      지번 : 노원구 공릉동 441-18</P>
-                      ◉전화번호</P>
-                      0507-1319-2708"},
-  3 : {"title" : "반갑다연어야", "description":"                      ◉가격</p>
-                      연어회 : 17,900 대왕돈까스 : 11,900 연어초밥 : (10p) 12,000 연어불초밥 : 15,000 연어장덮밥 : 12,000 연어덮밥 : 12,000 연어불덮밥 13,000 외 술안주 등 多</br>
-		      </P>
-                      ◉영업시간</P>
-                      화-토 11:30 - 21:00
-                      </P>
-                      ◉장소 </P>
-                      노원구 동일로 207
-                      지번 : 노원구 공릉동 441-19</P>
-                      ◉전화번호</P>
-                      02-972-9590"}
-}
-//close button func
-closeBtn.onclick = function(){
-  modal.style.display = "none";
-}
-//빈 여백 클릭 시 모달창 닫힘 func
-window.onclick = function(){
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-//모달창 오픈 func
-function explain(n){
-  const title = document.querySelector(".title");
-  const description = document.querySelector(".description");
-  title.innerText = btn_description[n]["title"];
-  description.innerText = btn_description[n]["description"];
-  modal.style.display = "block";
-}
-     
-       
-      
-    </script>
+
   
   
   
