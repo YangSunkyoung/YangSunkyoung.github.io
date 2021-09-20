@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -18,8 +17,8 @@
       }
       .modal{
 			position: fixed;
-			top: 0; left: 0;
-			width: 100; height: 100%;
+			top: 170; left: 400;
+			width: 500px; height: 200px;
 			display: flex;
 			justify-content: center;
 			align-items : center;
@@ -27,13 +26,13 @@
 		.md_overlay {
       position: fixed;
 			background-color: rgba(0, 0, 0, 0.7);
-			width: 100; height: 100;
+			width: 200; height: 200;
 			position: absolute;
 		}
 		.md_content {
-			width: 100;
+			width: 50;
 			position: fixed;
-			padding: 100px 100px;
+			padding: 200px 200px;
 			background-color: white;
       text-align: center;
 			border-radius: 6px;
@@ -45,9 +44,9 @@
 		}
 		.modal_text { 
       height:200px;
-      font-size:12px; }
+      font-size:11px; }
       .md_content button
-    { padding: 10px 20px;
+    { padding: 10px 10px;
       font size:15px;
       border: 1px;
       border-radius: 4px;
@@ -91,7 +90,7 @@
               <p class="card-text">에이엔</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button class="btn btn-sm btn-outline-secondary" >view</button> </div>
+                  <button class="btn btn-sm btn-outline-secondary" id="0">view</button> </div>
                   
                 <small class="text-muted">4.47/5</small>
               </div>  
@@ -107,7 +106,7 @@
               <p class="card-text">휴돈정</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary" >View</butto> </div>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="1">View</butto> </div>
 
                 <small class="text-muted">4.4/5</small>
               </div>
@@ -121,7 +120,7 @@
               <p class="card-text">참치명적</p>             
                <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button"id="open2" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" id="2" class="btn btn-sm btn-outline-secondary">View</button>
                   
                 </div>
                 <small class="text-muted">4.82/5</small>
@@ -136,7 +135,7 @@
               <p class="card-text">도란도란</p>
                <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="iid">View</button>
                 
                 </div>
                 <small class="text-muted">4.37/5</small>
@@ -151,7 +150,7 @@
               <p class="card-text">쿠마</p>
                <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button class="btn btn-sm btn-outline-secondary">View</button>
+                  <button class="btn btn-sm btn-outline-secondary" id="iid">View</button>
               
                 </div>
                 <small class="text-muted">4.58/5</small>
@@ -166,7 +165,7 @@
               <p class="card-text">이박사왕돈까스</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="iid">View</button>
                
                 </div>
                 <small class="text-muted">4.37/5</small>
@@ -182,7 +181,7 @@
               <p class="card-text">스시롤</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="iid">View</button>
                
                 </div>
                 <small class="text-muted">4.57/5</small>
@@ -197,7 +196,7 @@
               <p class="card-text">대마에스시</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"  id="iid">View</button>
             
                 </div>
                 <small class="text-muted">4.44/5</small>
@@ -212,7 +211,7 @@
               <p class="card-text">길동우동</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="iid">View</button>
           
                 </div>
                 <small class="text-muted">4.28/5</small>
@@ -228,8 +227,8 @@
     <div class="md_overlay"></div>
     <div class="md_content">
       <button class="md_content button">X</button>
-      <h3 class="store_name">가게이름</h3>
-       <p class="description">가게설명</p>
+      <h3 class="store_name" id="s_name">가게이름</h3>
+       <p class="description" id="desc">가게설명</p>
       </div>                                 
     </div>
 </div>
@@ -245,15 +244,29 @@
   </div>
   <script type="text/javascript">
 
+      var resto_info = [
+         { id : 0, s_name : "에이엔", price : 5000, location : "공릉동 33", time : "10:00 - 22:00", tel : "010-1111-2345" },
+         { id : 1, s_name : "휴돈정", price : 5000, location : "공릉동 33", time : "10:00 - 22:00", tel : "010-1111-2346" },
+         { id : 2, s_name : "참치명적", price : 5000, location : "공릉동 33", time : "10:00 - 22:00", tel : "010-1111-2347" },
+      ];
+
       const openButton = document.querySelectorAll(".btn-group");
       let modal = document.querySelector(".modal");
       let overlay = modal.querySelector(".md_overlay");
       const closeButton = modal.querySelectorAll(".md_content button");
+      let s_name = document.querySelector("#s_name");
+      let desc = document.querySelector("#desc");
      
-      let openModal = () => {
-        modal.classList.remove("hidden"); }
+      let openModal = (e) => {
+        modal.classList.remove("hidden");
 
-      let closeModal = () => {
+        iid = Number(e.target.id);
+        s_name.innerHTML = resto_info[iid].s_name;
+        desc.innerHTML = resto_info[iid].tel;
+    
+      }
+
+      let closeModal = (e) => {
         modal.classList.add("hidden");
       }
      
@@ -268,7 +281,7 @@
   
   
 </footer>
-    <script src="script.js"></script>
+
       
   </body>
 </html>
