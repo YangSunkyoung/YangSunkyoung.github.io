@@ -1,7 +1,7 @@
 @charset "UTF-8";
 //project/IBMPlexSansKR-Regular.ttf
 /* Base */ 
-html { font-family: 'IBMPlexSansKR-Regular', sans-serif; font-size: 20px; line-height: 1.5;}
+html { font-family: 'IBMPlexSansKR-Bold', sans-serif; font-size: 20px; line-height: 1.5;}
 body { background-color: rgb(240, 240, 240); color: rgb(0, 0, 0); min-width: 960px; padding-top: 240px; }
 h1, h2, h3, p, ul { margin: 0; }
 ul { padding-left: 0; }
