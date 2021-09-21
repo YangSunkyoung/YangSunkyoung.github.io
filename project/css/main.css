@@ -91,11 +91,11 @@ img { vertical-align: middle; }
     overflow: hidden;
 }
 .page-header-clone .site-logo a:before {
-    content: url(../img/logo-small.png);
+    content: url(../img/logo-small2.png);
     display: inline-block;
 }
 .page-header-clone .primary-nav {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 35px;
 }
 .page-header-clone .primary-nav a {
