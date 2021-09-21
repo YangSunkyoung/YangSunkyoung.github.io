@@ -46,7 +46,7 @@ img { vertical-align: middle; }
 }
 .primary-nav li {
     font-family: 'IBM Plex Sans KR', sans-serif;
-    font-size:30px;
+    font-size:20px;
     float: left;
 }
 .primary-nav a {
@@ -59,7 +59,7 @@ img { vertical-align: middle; }
 
 /* Sticky header (clone) */
 .page-header-clone {
-    background-color: rgb(207, 223, 227);
+    background-color: rgb(67, 144, 163);
     opacity: 0.9;
     position: fixed;
     top: -35px;
