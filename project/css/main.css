@@ -22,7 +22,7 @@ img { vertical-align: middle; }
     width: 100%;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid rgb(204, 204, 204);			
+    border-bottom: 2px solid rgb(204, 204, 204);			
 }
 
 .page-header > .inner {
@@ -34,14 +34,14 @@ img { vertical-align: middle; }
 .site-logo {
     font-size: 100%;
     float: left;
-    margin-left: -20px;
+    margin-left: -10px;
 }
 
 /* Primary nav */
 .primary-nav {
     float: right;
-    line-height: 65px;
-    letter-spacing: 1px;
+    line-height: 60px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 .primary-nav li {
