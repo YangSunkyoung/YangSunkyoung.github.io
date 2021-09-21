@@ -34,7 +34,7 @@ img { vertical-align: middle; }
 .site-logo {
     font-size: 100%;
     float: left;
-    margin-left: -10px;
+    margin-left: -30px;
 }
 
 /* Primary nav */
@@ -46,6 +46,7 @@ img { vertical-align: middle; }
 }
 .primary-nav li {
     font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size:20px;
     float: left;
 }
 .primary-nav a {
