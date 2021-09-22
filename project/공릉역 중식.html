@@ -27,8 +27,8 @@
       }
       .modal{
 			position: fixed;
-			top: 0; left: 0;
-			width: 100; height: 100%;
+			top: 170; left: 400;
+			width: 500px; height: 200px;
 			display: flex;
 			justify-content: center;
 			align-items : center;
@@ -36,13 +36,13 @@
 		.md_overlay {
       position: fixed;
 			background-color: rgba(0, 0, 0, 0.7);
-			width: 100; height: 100;
+			width: 200; height: 200;
 			position: absolute;
 		}
 		.md_content {
-			width: 100;
+			width: 50;
 			position: fixed;
-			padding: 100px 100px;
+			padding: 200px 200px;
 			background-color: white;
       text-align: center;
 			border-radius: 6px;
@@ -54,9 +54,9 @@
 		}
 		.modal_text { 
       height:200px;
-      font-size:12px; }
+      font-size:11px; }
       .md_content button
-    { padding: 10px 20px;
+    { padding: 10px 10px;
       font size:15px;
       border: 1px;
       border-radius: 4px;
@@ -97,7 +97,7 @@
               <p class="card-text">뽕신</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button  type="button" class="btn btn-sm btn-outline-secondary">view</button> </div>
+                  <button  type="button" class="btn btn-sm btn-outline-secondary" id="0">view</button> </div>
                 
                 <small class="text-muted">4.47/5</small>
               </div>  
@@ -113,7 +113,7 @@
               <p class="card-text">용천각</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button"  class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button"  class="btn btn-sm btn-outline-secondary" id="1">View</button>
                 
                  </div>
                 <div class="modal1 hidden">
@@ -150,7 +150,7 @@
               <p class="card-text">미차이</p>             
                <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="2">View</button>
                   </div>
                 <small class="text-muted">3.99/5</small>
               </div>
@@ -164,7 +164,7 @@
               <p class="card-text">쉐프의생안심탕수육 </p>
                <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="3">View</button>
                 
                 </div>
                 <small class="text-muted">4.25/5</small>
@@ -179,7 +179,7 @@
               <p class="card-text">국일반점</p>
                <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button class="btn btn-sm btn-outline-secondary">View</button>
+                  <button class="btn btn-sm btn-outline-secondary" id="4">View</button>
               
                 </div>
                 <small class="text-muted">4.25/5</small>
@@ -194,7 +194,7 @@
               <p class="card-text">마라하오 </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="5">View</button>
                
                 </div>
                 <small class="text-muted">4.25/5</small>
@@ -210,7 +210,7 @@
               <p class="card-text">용천각</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="6">View</button>
                
                 </div>
                 <small class="text-muted">4.2/5</small>
@@ -225,7 +225,7 @@
               <p class="card-text">공릉투투램양꼬치&닭꼬치포장</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="7">View</button>
             
                 </div>
                 <small class="text-muted">.</small>
@@ -240,7 +240,7 @@
               <p class="card-text">차이니스 </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="8">View</button>
           
                 </div>
                 <small class="text-muted">4.24/5</small>
@@ -256,23 +256,11 @@
     <div class="md_overlay"></div>
     <div class="md_content">
       <button class="md_content button">X</button>
-      <h2 class="store_name">가게이름</h2>
-        ◉가격</p>
-        런치 : 30,000
-        디너 : 50,000
-        오마카세 : 70,000</P>
-        ◉영업시간</P>
-        런치 : 12:00~ 13:00
-        디너 : 18:30~ 22:00
-        월-금,토오후 6시 30분 - 오후 10시 (일요일 휴무)</P>
-        ◉장소 </P>
-        노원구 동일로 195길 7
-        지번 : 노원구 공릉동 379-34</P>
-        ◉전화번호</P>
-        02-977-0010
+      <h3 class="store_name" id="s_name">가게이름</h3>
+       <p class="description" id="desc">가게설명</p>
       </div>                                 
     </div>
-  </div>
+</div>
 </main>
 
 <footer class="text-muted py-5">
@@ -284,29 +272,51 @@
     <p class="mb-0"> 서울과학기술대학교 김소은 양선경 <a href="https://www.seoultech.ac.kr/index.jsp"> homepage</a></p>
   </div>
   <script type="text/javascript">
-    <!--
-      
+
+      var resto_info = [
+         { id : 0, s_name : "에이엔", price : 5000, location : "공릉동 33", time : "10:00 - 22:00", tel : "010-1111-2345" },
+         { id : 1, s_name : "휴돈정", price : 5000, location : "공릉동 33", time : "10:00 - 22:00", tel : "010-1111-2346" },
+         { id : 2, s_name : "참치명적", price : 5000, location : "공릉동 33", time : "10:00 - 22:00", tel : "010-1111-2347" },
+	       { id : 3, s_name : "도란도란" },
+	       { id : 4, s_name : "쿠마"},
+         { id : 5, s_name : "이박사왕돈까스"},
+         { id : 6, s_name : "스시롤"},
+         { id : 7, s_name : "대마에스시" },
+         { id : 8, s_name : "길동우동"},
+      ];
+
       const openButton = document.querySelectorAll(".btn-group");
       let modal = document.querySelector(".modal");
       let overlay = modal.querySelector(".md_overlay");
       const closeButton = modal.querySelectorAll(".md_content button");
-    
-      let openModal = () => {
+      let s_name = document.querySelector("#s_name");
+      let desc = document.querySelector("#desc");
+     
+      let openModal = (e) => {
         modal.classList.remove("hidden");
+
+        iid = Number(e.target.id);
+        s_name.innerHTML = resto_info[iid].s_name;
+        desc.innerHTML = resto_info[iid].tel;
+    
       }
-      let closeModal = () => {
+
+      let closeModal = (e) => {
         modal.classList.add("hidden");
       }
      
+      
       openButton.forEach((openButton) => {openButton.addEventListener("click", openModal);});
       closeButton.forEach((closeButton) => {closeButton.addEventListener("click", closeModal);});
-    
+      
+     
+       
+      
     </script>
-
   
   
 </footer>
-    <script src="script.js"></script>
+
       
   </body>
 </html>
