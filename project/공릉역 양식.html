@@ -5,7 +5,16 @@
     <title>공릉역 양식</title>
    
     <link href="styles.css" rel="stylesheet" >
-    
+	  
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/vendor/modernizr.custom.min.js"></script>
+    <script src="./js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="./js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="./js/main.js"></script>
+	  
+	  
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -17,8 +26,8 @@
       }
       .modal{
 			position: fixed;
-			top: 170; left: 400;
-			width: 500px; height: 200px;
+			top: 0; left: 0;
+			width: 100; height: 100%;
 			display: flex;
 			justify-content: center;
 			align-items : center;
@@ -26,13 +35,13 @@
 		.md_overlay {
       position: fixed;
 			background-color: rgba(0, 0, 0, 0.7);
-			width: 200; height: 200;
+			width: 100; height: 100;
 			position: absolute;
 		}
 		.md_content {
-			width: 50;
+			width: 100;
 			position: fixed;
-			padding: 200px 200px;
+			padding: 100px 100px;
 			background-color: white;
       text-align: center;
 			border-radius: 6px;
@@ -44,9 +53,9 @@
 		}
 		.modal_text { 
       height:200px;
-      font-size:11px; }
+      font-size:12px; }
       .md_content button
-    { padding: 10px 10px;
+    { padding: 10px 20px;
       font size:15px;
       border: 1px;
       border-radius: 4px;
@@ -59,23 +68,22 @@
     </head>
   <body>
     
-<main>  
+<main>
  
-  <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"></header>
-      
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li id="li1"><a href="https://yangsunkyoung.github.io/project/%EA%B3%B5%EB%A6%89%EC%97%AD%20%ED%95%9C%EC%8B%9D.html#" class="nav-link px-2 link-dark">한식</a></li>
-        <li id="li2" onclick="location.href='https://yangsunkyoung.github.io/project/%EA%B3%B5%EB%A6%89%EC%97%AD%20%EC%A4%91%EC%8B%9D.html'"><a href="#" class="nav-link px-2 link-dark">중식</a></li>
-        <li id="li3" onclick="location.href='https://soeunk.github.io/yeah/#3rdPage'"><a href="#" class="nav-link px-2 link-dark">home</a></li>
-        <li id="li4" onclick="location.href='https://yangsunkyoung.github.io/project/%EA%B3%B5%EB%A6%89%EC%97%AD%20%EC%9D%BC%EC%8B%9D.html'"><a href="#" class="nav-link px-2 link-dark">일식</a></li>
-        <li id="li5"><a href="#" class="nav-link px-2 link-dark">양식</a></li>
-      </ul>
-  
-   
-  </div>
-
-  <main>
+	<div class="page-header-cone"></div>
+<header class="page-header" role="banner">
+    <div class="inner clearfix">
+        <h1 class="site-logo"><a href="https://soeunk.github.io/yeah/"><img src="./img/logo2.png" alt="logo" ></a></h1>
+        <nav class="primary-nav" role="navigation">
+            <ul>
+                <li><a href="https://yangsunkyoung.github.io/project/%EA%B3%B5%EB%A6%89%EC%97%AD%20%ED%95%9C%EC%8B%9D.html#">한식</a></li>
+                <li><a href="https://yangsunkyoung.github.io/project/%EA%B3%B5%EB%A6%89%EC%97%AD%20%EC%A4%91%EC%8B%9D.html">중식</a></li>
+                <li><a href="https://yangsunkyoung.github.io/project/%EA%B3%B5%EB%A6%89%EC%97%AD%EC%9D%BC%EC%8B%9D.html">일식</a></li>
+                <li><a href="https://yangsunkyoung.github.io/project/%EA%B3%B5%EB%A6%89%EC%97%AD%20%EC%96%91%EC%8B%9D.html">양식</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
    
   
   <div class="album py-5 bg-light">
