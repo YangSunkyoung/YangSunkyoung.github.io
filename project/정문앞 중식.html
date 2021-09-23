@@ -99,34 +99,8 @@
                   <p class="card-text">중국집</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button class="btn btn-sm btn-outline-secondary" >view</button> </div>
-            --        <div class="modal hidden">
-                <div class="md_overlay"></div>
-                <div class="md_content">
-                  <button class="btn btn-sm btn-outline-secondary">X</button>
-                  <h2 class="store_name">중국집</h1>
-                  <div class="modal_text">
-                    ◉가격</p>
-                    짜장면 : 5,500
-            짬뽕 : 6,500
-            우동 : 6,500
-            간짜장 6,500
-            울면 : 6,500
-            볶음밥 : 7,000
-            짜장밥 : 7,000
-            짬뽕밥 : 7,000
-            탕수육 大 27,000
-            외 多</P>
-                    ◉영업시간</P>
-                    매일 10:30 - 21:00</P>
-                    ◉장소 </P>
-                    노원구 동일로51길 7
-                    지번 : 노원구 공릉동 440-11</P>
-                    ◉전화번호</P>
-                    02-979-5353
-                  </div>                                 
-                </div>
-                </div>
+                      <button class="btn btn-sm btn-outline-secondary" id="0" >view</button> </div>
+               
 
                     <small class="text-muted">4.31/5</small>
                   </div>  
@@ -142,7 +116,7 @@
                   <p class="card-text">샹츠마라</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" >View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="1" >View</button>
                        </div>
                     <small class="text-muted">4.61/5</small>
                   </div>
@@ -156,7 +130,7 @@
                   <p class="card-text">왕짜장공릉점</p>             
                    <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button"id="open2" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button"id="2" class="btn btn-sm btn-outline-secondary">View</button>
                       
                     </div>
                     <small class="text-muted">4.38/5</small>
@@ -171,7 +145,7 @@
                   <p class="card-text">라화방마라탕</p>
                    <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="3">View</button>
                     
                     </div>
                     <small class="text-muted">4.26/5</small>
@@ -186,7 +160,7 @@
                   <p class="card-text">복쓰부</p>
                    <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button class="btn btn-sm btn-outline-secondary">View</button>
+                      <button class="btn btn-sm btn-outline-secondary" id="4">View</button>
                   
                     </div>
                     <small class="text-muted">4.88/5</small>
@@ -201,7 +175,7 @@
                   <p class="card-text">춘리마라탕</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="5">View</button>
                    
                     </div>
                     <small class="text-muted">4.4/5</small>
@@ -217,7 +191,7 @@
                   <p class="card-text">가원양꼬치</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="6">View</button>
                    
                     </div>
                     <small class="text-muted"></small>
@@ -232,11 +206,11 @@
                   <p class="card-text">양자강</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="7">View</button>
                 
                     </div>
                     <small class="text-muted">4.37/5</small>
-                  </div>
+                  </div> 
                 </div>
               </div>
             </div>
@@ -247,7 +221,7 @@
                   <p class="card-text">대박짬뽕마을</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="8">View</button>
               
                     </div>
                     <small class="text-muted">4.41/5</small>
@@ -264,48 +238,67 @@
       <div class="md_overlay"></div>
       <div class="md_content">
         <button class="md_content button">X</button>
-        <h3 class="store_name">가게이름</h3>
-         <p class="description">가게설명</p>
+        <h3 class="store_name" id="s_name">가게이름</h3>
+         <p class="description" id="desc">가게설명</p>
         </div>                                 
       </div>
+  </div>
+  </main>
+  
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#"> 맨 위로 </a>
+      </p>
+      <p class="mb-1">공릉동 &copy; 맛집</p>
+      <p class="mb-0"> 서울과학기술대학교 김소은 양선경 <a href="https://www.seoultech.ac.kr/index.jsp"> homepage</a></p>
     </div>
-    </main>
-    
-    <footer class="text-muted py-5">
-      <div class="container">
-        <p class="float-end mb-1">
-          <a href="#"> 맨 위로 </a>
-        </p>
-        <p class="mb-1">공릉동 &copy; 맛집</p>
-        <p class="mb-0"> 서울과학기술대학교 김소은 양선경 <a href="https://www.seoultech.ac.kr/index.jsp"> homepage</a></p>
-      </div>
-      <script type="text/javascript">
-        <!--
-         
-          const openButton = document.querySelectorAll(".btn-group");
-          let modal = document.querySelector(".modal");
-          let overlay = modal.querySelector(".md_overlay");
-          const closeButton = modal.querySelectorAll(".md_content button");
-         
-          let openModal = () => {
-            modal.classList.remove("hidden"); }
-    
-          let closeModal = () => {
-            modal.classList.add("hidden");
-          }
-         
-          
-          openButton.forEach((openButton) => {openButton.addEventListener("click", openModal);});
-          closeButton.forEach((closeButton) => {closeButton.addEventListener("click", closeModal);});
-          
-         
-           
-          
-        </script>
+    <script type="text/javascript">
+  
+        var resto_info = [
+           { id : 0, s_name : "에이엔", price : 5000, location : "공릉동 33", time : "10:00 - 22:00", tel : "010-1111-2345" },
+           { id : 1, s_name : "휴돈정", price : 5000, location : "공릉동 33", time : "10:00 - 22:00", tel : "010-1111-2346" },
+           { id : 2, s_name : "참치명적", price : 5000, location : "공릉동 33", time : "10:00 - 22:00", tel : "010-1111-2347" },
+           { id : 3, s_name : "도란도란" },
+           { id : 4, s_name : "쿠마"},
+           { id : 5, s_name : "이박사왕돈까스"},
+           { id : 6, s_name : "스시롤"},
+           { id : 7, s_name : "대마에스시" },
+           { id : 8, s_name : "길동우동"},
+        ];
+  
+        const openButton = document.querySelectorAll(".btn-group");
+        let modal = document.querySelector(".modal");
+        let overlay = modal.querySelector(".md_overlay");
+        const closeButton = modal.querySelectorAll(".md_content button");
+        let s_name = document.querySelector("#s_name");
+        let desc = document.querySelector("#desc");
+       
+        let openModal = (e) => {
+          modal.classList.remove("hidden");
+  
+          iid = Number(e.target.id);
+          s_name.innerHTML = resto_info[iid].s_name;
+          desc.innerHTML = resto_info[iid].tel;
       
-      
-    </footer>
-        <script src="script.js"></script>
-          
-      </body>
-    </html>
+        }
+  
+        let closeModal = (e) => {
+          modal.classList.add("hidden");
+        }
+       
+        
+        openButton.forEach((openButton) => {openButton.addEventListener("click", openModal);});
+        closeButton.forEach((closeButton) => {closeButton.addEventListener("click", closeModal);});
+        
+       
+         
+        
+      </script>
+    
+    
+  </footer>
+  
+        
+    </body>
+  </html>
